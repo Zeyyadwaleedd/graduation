@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+
+    <title>Appointment</title>
+</head>
+<body>
+
+    <nav class = "uploadnav1 "> <!--nav-->
+
+        <img class="logonav1" src="pics/logoupload.svg" alt=""> <!--logo-->
+    
+        <ul class="linksnav1"> 
+            <li> <a href="home.html">Home</a> </li>
+            <li> <a href="#">Services</a> </li>
+            <li> <a href="appointment.html">Appointment</a> </li>
+            <li> <a href="#">About Us</a> </li>
+        </ul>
+    
+    <div class="namenav1"> <!--avatar and name div-->
+    
+        <p>UserName</p>
+        <img src="pics/images.jpg" alt="">
+    
+    </div> <!--end avatar and name div-->
+    
+    </nav>  <!--end nav-->
+
+<section class="row allbooking1">
+    <div class="col-3 booking1">
+        <h1>Appointment</h1>
+
+        <div class="bookingtable1">
+            <p>Username</p>
+            <p>Email Address</p>
+            <p>Phone Number</p>
+            <p>Date</p>
+            <input type="radio" name="statues1" id="on1" checked>
+            <label for="on1">online</label>
+            <input type="radio" name="statues1" id="off1">
+            <label for="off1">offline</label>
+        </div>
+
+        <a href="paymentsuccess.html" target="_blank"><button>Book Appointment</button></a>
+    </div>
+
+    <div class="col-7 g10">
+        <div class="g11">
+            <img src="pics/calendar.svg" alt="">
+            <h3>Available</h3>
+        </div>
+
+        <div class="g12">
+            <p onclick="togglecheck1()">4-5 PM <i class="fa-solid fa-check" id="appcheck11"></i></p>
+            <p onclick="togglecheck2()">5-6 PM <i class="fa-solid fa-check" id="appcheck12"></i></p>
+            <p onclick="togglecheck3()">6-7 PM <i class="fa-solid fa-check" id="appcheck13"></i></p>
+            <p onclick="togglecheck4()">7-8 PM <i class="fa-solid fa-check" id="appcheck14"></i></p>
+            <p onclick="togglecheck5()">8-9 PM <i class="fa-solid fa-check" id="appcheck15"></i></p>
+            <p onclick="togglecheck6()">9-10 PM <i class="fa-solid fa-check" id="appcheck16"></i></p>
+        </div>
+
+        <div class="g13">
+            <img src="pics/card.svg" alt="">
+            <h3>Payment</h3>
+        </div>
+
+        <div class="g14">
+            <p onclick="togglecheck7()">PayPal <i class="fa-solid fa-check" id="appcheck111"></i></p>
+            <p onclick="togglecheck8()">Google Wallet<i class="fa-solid fa-check" id="appcheck112"></i></p>
+            <p onclick="togglecheck9()">Librapay <i class="fa-solid fa-check" id="appcheck113"></i></p>
+            <p onclick="togglecheck10()">Credit Card <i class="fa-solid fa-check" id="appcheck114"></i></p>
+        </div>
+
+        <div class="row tableg15 ms-1">
+            <div class="col-4">
+                <img src="pics/cridtcard.svg" alt="">
+            </div>
+
+            <div class="col-7 ms-5">
+                <form action="" class="formtab1">
+                    <input type="text" id="inpbg1" placeholder="Card Number" required>
+                    <input type="text" id="inpsm1" placeholder="Expiry Date" required>
+                    <input type="text" id="inpsm2" placeholder="CVV" required>
+                    <input type="text" id="inpbg1" placeholder="Name"required>
+                </form>
+                <input type="checkbox" name="" id="check12g" >
+                <label for="check12g">Save Card Details</label>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <script src="js/appointment.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+</body>
+</html>
